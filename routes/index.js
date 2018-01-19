@@ -10,7 +10,8 @@ router.post('/', function(req, res, next) {
   res.status(201);
   res.json({
     data: {
-      message: 'Posting Recieved!'
+      message: 'Posting Recieved!',
+      posting: req.body
     }
   });
 });
