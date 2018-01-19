@@ -4,8 +4,11 @@ const favicon = require('serve-favicon');
 const logger = require('morgan');
 const cookieParser = require('cookie-parser');
 const bodyParser = require('body-parser');
+const cors = require('cors');
 
 const app = express();
+
+app.use(cors());
 
 const postings = require('./routes/index');
 
